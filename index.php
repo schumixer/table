@@ -1,11 +1,11 @@
-<?
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Table</title>
     <link rel="stylesheet" href="style.css">
+    <!-- import jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- import js -->
     <script src="functions.js"></script>
 </head>
 <body>
@@ -16,7 +16,7 @@
     </header>
     <div class="content">
         <img id = "image" src="/src/area.png" alt="" width="500px">
-        <form id="myForm" action="">
+        <form id="myForm" action="GET">
 
             <div class="insideForm x">    
                 <label>Выберите X:</label>
