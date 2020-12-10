@@ -1,13 +1,15 @@
 window.onload = ()=>{//когда документ загрузится сработает функция(лямбда-выраЖение)
     let isNumber = function isNumber(value)//проверка на число 
     {
-    return typeof value === 'number' && isFinite(value);
+    return typeof (+value) === 'number' && isFinite(+value);
     }
 
     //проверка правильности введенных данных
     function validateForm() {
+        debugger
         let isYCorrect = true;
         let elemY = $("#inputY");//достаем эл-т с id = inputY
+        console.log(isNumber(elemY.val()));
         if( elemY.val()==''/*если строчка пустая*/ || !isNumber(elemY.val())/*не число*/ || (+elemY.val()<-5 || +elemY.val()>5 ) ) {
             isYCorrect = false; 
         }
